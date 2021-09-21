@@ -14,7 +14,7 @@ import { NewMedicalFormComponent } from './modules/new-medical-form/new-medical-
     NewMedicalFormComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
