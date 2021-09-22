@@ -7,18 +7,37 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { NewMedicalFormComponent } from './modules/new-medical-form/new-medical-form.component';
+import { RouterModule } from '@angular/router';
+import { WelcomeComponent } from './modules/welcome/welcome.component';
+import { PatientComponent } from './modules/patient/patient.component';
+import { OrderComponent } from './modules/order/order.component';
+import { ReferInstitutionComponent } from './modules/refer-institution/refer-institution.component';
+import { ClinicalComponent } from './modules/clinical/clinical.component';
+import { SpecimenComponent } from './modules/specimen/specimen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewMedicalFormComponent,
+    WelcomeComponent,
+    PatientComponent,
+    OrderComponent,
+    ReferInstitutionComponent,
+    ClinicalComponent,
+    SpecimenComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      { path: 'welcome', component: WelcomeComponent },
+      {path: 'new-medical-form', component: NewMedicalFormComponent}
+      //{ path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      //{ path: '**', redirectTo: 'welcome', pathMatch: 'full' }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

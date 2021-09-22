@@ -16,4 +16,23 @@
     "Phone": 787-569-4592,
     "SSN": 4581
 },
-]
+
+{
+    "PatientID": 2,
+    "FirstName": "Carlos",
+    "LastName": "Santiago",
+    "SecondLastName": "Ramirez",
+    "MiddleName": "N/A",
+    "DateOfBirth": "03/15/1944",
+    "Age": 70,
+    "Gender": "Male",
+    "Pregnant": "No",
+    "GestationTime": 0,
+    "Address": "Urb. Monte Sol Calle 11 AQ10",
+    "City": "Toa Alta",
+    "State": "Puerto Rico",
+    "ZipCode": 00953, 
+    "Phone": 787-257-2597,
+    "SSN": 8416
+}
+];
