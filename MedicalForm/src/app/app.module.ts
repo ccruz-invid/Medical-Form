@@ -17,6 +17,8 @@ import { SpecimenComponent } from './modules/specimen/specimen.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
+    MatStepperModule,
     FormsModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
