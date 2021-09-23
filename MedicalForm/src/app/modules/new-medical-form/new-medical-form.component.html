@@ -8,31 +8,41 @@
       <div>
         <h5 class="text-dark">Patient's General Information</h5>
         <p class="lead text-muted pb-3">Choose your website name & create repository</p>
+        <div class="d-flex flex-row">
         <!-- Input Firt Name-->
+        <div class="col-md-2 mb-2">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon2">
             <div class="input-group-append">
             </div>
           </div>
+          </div>
             <!-- Input Middle Name-->
+            <div class="col-md-2 mb-2">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Middle Name" aria-label="Middle Name" aria-describedby="basic-addon2">
           <div class="input-group-append">
           </div>
         </div>
+      </div>
           <!-- Input Last Name-->
+          <div class="col-md-2 mb-2">
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon2">
             <div class="input-group-append">
             </div>
           </div>
+        </div>
            <!-- Input Second Last Name-->
+           <div class="col-md-2 mb-2">
            <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Second Last Name" aria-label="Second Last Name" aria-describedby="basic-addon2">
             <div class="input-group-append">
             </div>
           </div>
+        </div>
           <!--Select Input Gender-->
+          <div class="col-md-2 mb-2">
           <div class="input-group mb-3">
           <select class="form-select" aria-label="Default select example">
             <option selected>Gender</option>
@@ -41,32 +51,46 @@
             <option value="3">Transgender Woman</option>
             <option value="4">Transgender Male</option>
           </select></div>
+        </div>
+      </div>
+
+        <div class="d-flex flex-row">
         <!-- Date Picker Date of Birth-->
+        <div class="col-md-2 mb-2">
             <div>
-              <label>
-                Date of Birth: 
-              <input type="date" name="bday"
-              min="1900-01-01" max="2100-12-31"></label>
+              <input type="date" class="form-control" 
+              placeholder="Date of Birth:" aria-label="Date of Birth:" aria-describedby="basic-addon2"
+              min="1900-01-01" max="2100-12-31">
             </div>
+        </div>
              <!-- Input Age-->
+             <div class="col-md-2 mb-2">
            <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="basic-addon2">
             <div class="input-group-append">
             </div>
-          </div>
-             <!-- Input Address-->
-             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-              </div>
-            </div>
-               <!-- Input Last 4 SSN-->
+          </div> 
+        </div>  
+          <!-- Input Last 4 SSN-->
+          <div class="col-md-2 mb-2">
            <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Last 4 SSN" aria-label="Last 4 SSN" aria-describedby="basic-addon2">
             <div class="input-group-append">
             </div>
           </div>
+        </div>
+             <!-- Input Address-->
+             <div class="col-md-4 mb-2">
+             <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+              </div>
+            </div>
+        </div>
+      </div>
+        <div class="d-flex flex-row">
             <!--Select Input City-->
+            <div class="col-md-2 mb-2">
             <div class="input-group mb-3">
               <select class="form-select" aria-label="Default select example">
                 <option selected>City</option>
@@ -92,41 +116,61 @@
                  <option value="64">Santa Isabel</option> <option value="65">Toa Alta</option> <option value="66">Toa Baja</option> <option value="67">Trujillo Alto</option>
                  <option value="68">Utuado</option> <option value="69">Vega Alta</option> <option value="70">Vega Baja</option> <option value="71">Vieques</option>
                  <option value="72">Villalba</option> <option value="73">Yabucoa</option> <option value="74">Yauco</option>               
-              </select></div>
+              </select></div></div>
               <!--Select Input State-->
+              <div class="col-md-2 mb-2">
           <div class="input-group mb-3">
             <select class="form-select" aria-label="Default select example">
-              <option selected>Puerto Rico</option>
-            </select></div>
+              <option selected>State</option>
+              <option value="1">Puerto Rico</option>
+            </select></div></div>
             <!-- Input Zip Code-->
+            <div class="col-md-2 mb-2">
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon2">
               <div class="input-group-append">
               </div>
             </div>
+          </div>
             <!-- Input Phone-->
+            <div class="col-md-2 mb-2">
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
               <div class="input-group-append">
               </div>
             </div>
+          </div>
             <!--Select Pregnant?-->
+            <div class="col-md-2 mb-2">
           <div class="input-group mb-3">
             <select class="form-select" aria-label="Default select example">
-              <option selected>Yes</option>
-              <option selected>No</option>
-              <option selected>Not Sure</option>
-            </select></div>
+              <option selected>Pregnant?</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+              <option value="3">Not Sure</option>
+            </select></div></div>
+            </div>
+
             <!-- Input Gestion Time (Weeks)-->
+            <div class="d-flex flex-row">
+            <div class="col-md-3 mb-2">
             <div class="input-group mb-3">
               <input type="number" class="form-control" placeholder="Gestion Time (Weeks)" aria-label="Gestion Time (Weeks)" 
               aria-describedby="basic-addon2" min="0" max="42">
-              <div class="input-group-append">
+
+            
+             
               </div>
             </div>
+          </div>
+        </div>
+            
+
       </div>
     </div>
     
+    <!-- Laboratory's Results-->
+
     <div class="d-flex mb-1">
       <div class="d-flex flex-column pr-4 align-items-center">
         <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
@@ -135,9 +179,51 @@
       <div>
         <h5 class="text-dark">Laboratory's Results</h5>
         <p class="lead text-muted pb-3">Go to your dashboard and clone Git respository from the url in the dashboard of your application</p>
+        <div class="d-flex flex-row">
+        <!-- Date Picker Date Collected-->
+        <div class="col-md-3 mb-2">
+         <div>
+          <label> Date Collected: <input type="date" name="bday" min="1900-01-01" max="2100-12-31"></label>
+        </div>
+      </div>
+         <!-- Time Picker Time Collected-->
+         <div class="col-md-4 mb-2">
+         <div> <label>Time Collected: <input type="date" name="bday" min="1900-01-01" max="2100-12-31"></label>
+        </div>
+      </div> 
+    </div>
+    <div class="d-flex flex-row">
+         <!-- Date Picker Date Received-->
+         <div class="col-md-3 mb-2">
+         <div> <label>Date Received: <input type="date" name="bday" min="1900-01-01" max="2100-12-31"></label>
+        </div>
+      </div>
+         <!-- Time Picker Time Received-->
+         <div class="col-md-3 mb-2">
+         <div> <label>Time Received: <input type="date" name="bday" min="1900-01-01" max="2100-12-31"></label>
+        </div></div>
+    </div>
+
+    <div class="d-flex flex-row">
+        <!--Select Input Specimen Type-->
+        <div class="col-md-3 mb-2">
+         <div class="input-group mb-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Specimen Type</option>
+            <option value="1">NULL</option>
+          </select></div></div>
+          <!--Select Input Specimen Source-->
+          <div class="col-md-3 mb-2">
+           <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Specimen Source</option>
+              <option value="1">NULL</option>
+            </select></div></div>
       </div>
     </div>
+    </div>
    
+    <!-- Patient's Clinical Information-->
     <div class="d-flex mb-1">
       <div class="d-flex flex-column pr-4 align-items-center">
         <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
@@ -146,11 +232,48 @@
       <div>
         <h5 class="text-dark">Patient's Clinical Information</h5>
         <p class="lead text-muted pb-3">Now make changes to your application source code, test it then commit &amp; push</p>
-        
+        <div class="d-flex flex-row">
+         <!--Select Input Patient's Status-->
+         <div class="col-md-3 mb-2">
+         <div class="input-group mb-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Patient's Status</option>
+            <option value="1">Ambulatory</option> <option value="2">Hospitalizated</option>
+          </select></div></div>
+           <!-- Date Picker First Symptom Date-->
+           <div class="col-md-3 mb-2">
+         <div><label>First Symptom Date: <input type="date" name="bday" min="1900-01-01" max="2100-12-31"></label>
+        </div></div>
+           <!--Select Input Symptoms-->
+           <div class="col-md-2 mb-2">
+           <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Symptoms</option>
+              <option value="1">Fever</option> <option value="2">Muscular Pain</option> <option value="3">Skin Eruptions</option>
+              <option value="4">Headache</option> <option value="5">Throat Ache</option> <option value="6">Diarrhea</option>
+              <option value="7">Dizziness</option> <option value="8">Fatigue</option> <option value="9">Shiver</option>
+              <option value="10">Dry Cough</option> <option value="11">Other</option>
+            </select></div></div>
+             <!--Select Input Vaccine-->
+             <div class="col-md-3 mb-2">
+           <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Vaccine</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+              <option value="3">Not Sure</option>
+            </select></div></div>
+             <!-- Date Picker Last Vaccine Date-->
+             <div class="col-md-3 mb-2">
+         <div>
+          <label> Last Vaccine Date: <input type="date" name="bday" min="1900-01-01" max="2100-12-31"></label>
+        </div></div>
+
       </div>
     </div>
+  </div>
 
-
+    <!-- Referring Institution-->
     <div class="d-flex mb-1">
         <div class="d-flex flex-column pr-4 align-items-center">
           <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">4</div>
@@ -159,8 +282,93 @@
         <div>
           <h5 class="text-dark">Referring Institution</h5>
           <p class="lead text-muted pb-3">Go to your dashboard and clone Git respository from the url in the dashboard of your application</p>
+           <!-- Input Institution's Name-->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Institution's Name" aria-label="Institution's Name" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+          </div>
+        </div>
+
+          <!-- Input Institution's ID-->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Institution's ID" aria-label="Institution's ID" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+            </div>
+          </div>
+
+          <!--Select Input Institution's Type-->
+          <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Institution's Type</option>
+              <option value="1">Hospital</option>
+              <option value="2">Laboratory</option>
+              <option value="3">Other</option>
+            </select></div>
+
+            <!-- Input Institution's Address-->
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Institution's Address" aria-label="Institution's Address" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+              </div>
+            </div>
+
+              <!--Select Input City-->
+              <div class="input-group mb-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>City</option>
+                  <option value="1">Adjuntas</option> <option value="2">Aguada</option> <option value="3">Aguadilla</option>
+                  <option value="4">Aguas Buenas</option> <option value="5">Aibonito</option> <option value="6">Arecibo</option> <option value="7">Arroyo</option>
+                  <option value="8">Añasco</option> <option value="9">Barceloneta</option> <option value="10">Barranquitas</option> <option value="11">Bayamón</option>
+                  <option value="12">Cabo Rojo</option> <option value="13">Caguas</option> <option value="14">Camuy</option> <option value="15">Canóvanas</option>
+                  <option value="16">Carolina</option> <option value="17">Cataño</option> <option value="18">Cayey</option><option value="19">Ceiba</option>
+                  <option value="20">Ciales</option> <option value="21">Cidra</option> <option value="22">Coamo</option> <option value="23">Comerío</option>
+                  <option value="24">Corozal</option> <option value="25">Culebra</option><option value="26">Dorado</option> <option value="27">Fajardo</option>
+    
+                  <option value="28">Florida</option> <option value="29">Guayama</option> <option value="30">Guayanilla</option> <option value="31">Guaynabo</option>
+                  <option value="32">Guarabo</option> <option value="33">Guánica</option> <option value="34">Hatillo</option> <option value="35">Hormigueros</option>
+                  <option value="36">Humacao</option> <option value="37">Isabela</option> <option value="38">Jayuya</option> <option value="37">Juana Díaz</option>
+                   <option value="38">Juncos</option> <option value="39">Lajas</option> <option value="40">Lares</option> <option value="41">Las Marías</option>
+                   <option value="42">Las Piedras</option> <option value="43">Loiza</option> <option value="44">Luquillo</option> <option value="45">Manatí</option>
+                   <option value="46">Maricao</option> <option value="47">Maunabo</option> <option value="48">Mayagüez</option> <option value="49">Moca</option>
+                   <option value="50">Morovis</option> <option value="51">Naguabo</option> <option value="52">Naranjito</option><option value="53">Orocovi</option>
+    
+                   <option value="54">Patillas</option> <option value="55">Peñuelas</option> <option value="56">Ponce</option> <option value="57">Quebradillas</option>
+                  <option value="56">Rincón</option> <option value="57">Río Grande</option> <option value="58">Sabana Grande</option> <option value="59">Salinas</option>
+                  <option value="60">San Germán</option> <option value="61">San Juan</option> <option value="62">San Lorenzo</option> <option value="63">San Sebastián</option>
+                   <option value="64">Santa Isabel</option> <option value="65">Toa Alta</option> <option value="66">Toa Baja</option> <option value="67">Trujillo Alto</option>
+                   <option value="68">Utuado</option> <option value="69">Vega Alta</option> <option value="70">Vega Baja</option> <option value="71">Vieques</option>
+                   <option value="72">Villalba</option> <option value="73">Yabucoa</option> <option value="74">Yauco</option>               
+                </select></div>
+                <!--Select Input State-->
+            <div class="input-group mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>State</option>
+                <option value="1">Puerto Rico</option>
+              </select></div>
+              <!-- Input Zip Code-->
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                </div>
+              </div>
+              <!-- Input Phone-->
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                </div>
+              </div>
+               <!-- Input Physician Name-->
+               <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Physician Name" aria-label="Physician Name" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                </div>
+              </div>
+                <!-- Input Physician ID-->
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Physician ID" aria-label="Physician ID" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                  </div>
+                </div>
         </div>
       </div>
-
-  </div>
 </form>
