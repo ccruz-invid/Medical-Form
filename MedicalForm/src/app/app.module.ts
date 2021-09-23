@@ -14,6 +14,9 @@ import { OrderComponent } from './modules/order/order.component';
 import { ReferInstitutionComponent } from './modules/refer-institution/refer-institution.component';
 import { ClinicalComponent } from './modules/clinical/clinical.component';
 import { SpecimenComponent } from './modules/specimen/specimen.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { SpecimenComponent } from './modules/specimen/specimen.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
     FormsModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
