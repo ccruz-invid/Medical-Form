@@ -3,50 +3,46 @@
         <mat-step label="Patient's General Information">
         <p class="lead text-muted pb-3">Choose your website name & create repository</p>
         <div class="d-flex flex-row">
-        <!-- Input Firt Name-->
-        <div class="col-md-2 mb-2">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            </div>
-          </div>
-          </div>
+        <!-- Input First Name-->
+        <!--<input matInput required>-->
+           <div class="col-md-2 mb-2">
+           <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput>
+          </mat-form-field></div>
             <!-- Input Middle Name-->
             <div class="col-md-2 mb-2">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Middle Name" aria-label="Middle Name" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-          </div>
-        </div>
-      </div>
+              <mat-form-field>
+             <mat-label>Middle Name</mat-label>
+                <input matInput>
+              </mat-form-field></div>
           <!-- Input Last Name-->
           <div class="col-md-2 mb-2">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            </div>
-          </div>
-        </div>
+            <mat-form-field>
+           <mat-label>Last Name</mat-label>
+              <input matInput>
+            </mat-form-field></div>
+
            <!-- Input Second Last Name-->
            <div class="col-md-2 mb-2">
-           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Second Last Name" aria-label="Second Last Name" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            </div>
-          </div>
-        </div>
+            <mat-form-field>
+           <mat-label>Second Last Name</mat-label>
+              <input matInput>
+            </mat-form-field></div>
+
           <!--Select Input Gender-->
-          <div class="col-md-2 mb-2">
-          <div class="input-group mb-3">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Gender</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-            <option value="3">Transgender Woman</option>
-            <option value="4">Transgender Male</option>
-          </select></div>
+           <div class="col-md-2 mb-2"><mat-form-field>
+            <mat-label>Gender</mat-label>
+            <mat-select>              
+              <mat-option value="Male">Male</mat-option>
+              <mat-option value="Female">Female</mat-option>
+              <mat-option value= "Transgender Woman">Transgender Woman</mat-option>
+              <mat-option value="Transgender Male">Transgender Male</mat-option>
+            </mat-select>
+          </mat-form-field></div>
+        
         </div>
-      </div>
+
 
         <div class="d-flex flex-row">
        <!-- Date Picker Date of Birth-->
@@ -62,90 +58,87 @@
       </div>
              <!-- Input Age-->
              <div class="col-md-2 mb-2">
-           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            </div>
-          </div> 
-        </div>  
+              <mat-form-field>
+             <mat-label>Age</mat-label>
+                <input matInput>
+              </mat-form-field></div>
           <!-- Input Last 4 SSN-->
           <div class="col-md-2 mb-2">
-           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Last 4 SSN" aria-label="Last 4 SSN" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            </div>
-          </div>
-        </div>
+            <mat-form-field>
+           <mat-label>Last 4 SSN</mat-label>
+              <input matInput>
+            </mat-form-field></div>
              <!-- Input Address-->
-             <div class="col-md-4 mb-2">
-             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-              </div>
-            </div>
-        </div>
+             <div class="col-md-2 mb-2">
+              <mat-form-field>
+             <mat-label><Address></Address></mat-label>
+                <input matInput>
+              </mat-form-field></div>
       </div>
         <div class="d-flex flex-row">
             <!--Select Input City-->
-            <div class="col-md-2 mb-2">
-            <div class="input-group mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>City</option>
-                <option value="1">Adjuntas</option> <option value="2">Aguada</option> <option value="3">Aguadilla</option>
-                <option value="4">Aguas Buenas</option> <option value="5">Aibonito</option> <option value="6">Arecibo</option> <option value="7">Arroyo</option>
-                <option value="8">Añasco</option> <option value="9">Barceloneta</option> <option value="10">Barranquitas</option> <option value="11">Bayamón</option>
-                <option value="12">Cabo Rojo</option> <option value="13">Caguas</option> <option value="14">Camuy</option> <option value="15">Canóvanas</option>
-                <option value="16">Carolina</option> <option value="17">Cataño</option> <option value="18">Cayey</option><option value="19">Ceiba</option>
-                <option value="20">Ciales</option> <option value="21">Cidra</option> <option value="22">Coamo</option> <option value="23">Comerío</option>
-                <option value="24">Corozal</option> <option value="25">Culebra</option><option value="26">Dorado</option> <option value="27">Fajardo</option>
-  
-                <option value="28">Florida</option> <option value="29">Guayama</option> <option value="30">Guayanilla</option> <option value="31">Guaynabo</option>
-                <option value="32">Guarabo</option> <option value="33">Guánica</option> <option value="34">Hatillo</option> <option value="35">Hormigueros</option>
-                <option value="36">Humacao</option> <option value="37">Isabela</option> <option value="38">Jayuya</option> <option value="37">Juana Díaz</option>
-                 <option value="38">Juncos</option> <option value="39">Lajas</option> <option value="40">Lares</option> <option value="41">Las Marías</option>
-                 <option value="42">Las Piedras</option> <option value="43">Loiza</option> <option value="44">Luquillo</option> <option value="45">Manatí</option>
-                 <option value="46">Maricao</option> <option value="47">Maunabo</option> <option value="48">Mayagüez</option> <option value="49">Moca</option>
-                 <option value="50">Morovis</option> <option value="51">Naguabo</option> <option value="52">Naranjito</option><option value="53">Orocovi</option>
-  
-                 <option value="54">Patillas</option> <option value="55">Peñuelas</option> <option value="56">Ponce</option> <option value="57">Quebradillas</option>
-                <option value="56">Rincón</option> <option value="57">Río Grande</option> <option value="58">Sabana Grande</option> <option value="59">Salinas</option>
-                <option value="60">San Germán</option> <option value="61">San Juan</option> <option value="62">San Lorenzo</option> <option value="63">San Sebastián</option>
-                 <option value="64">Santa Isabel</option> <option value="65">Toa Alta</option> <option value="66">Toa Baja</option> <option value="67">Trujillo Alto</option>
-                 <option value="68">Utuado</option> <option value="69">Vega Alta</option> <option value="70">Vega Baja</option> <option value="71">Vieques</option>
-                 <option value="72">Villalba</option> <option value="73">Yabucoa</option> <option value="74">Yauco</option>               
-              </select></div></div>
+            <div class="col-md-2 mb-2"><mat-form-field>
+              <mat-label>City</mat-label>
+              <mat-select>              
+                <mat-option value="Adjuntas">Adjuntas</mat-option> <mat-option value="Aguada">Aguada</mat-option> <mat-option value="Aguadilla">Aguadilla</mat-option>
+                  <mat-option value="Aguas Buenas">Aguas Buenas</mat-option> <mat-option value="5">Aibonito</mat-option> <mat-option value="Arecibo">Arecibo</mat-option> <mat-option value="Arroyo">Arroyo</mat-option>
+                  <mat-option value="Añasco">Añasco</mat-option> <mat-option value="Barceloneta">Barceloneta</mat-option> <mat-option value="Barranquitas">Barranquitas</mat-option> <mat-option value="Bayamón">Bayamón</mat-option>
+                  <mat-option value="Cabo Rojo">Cabo Rojo</mat-option> <mat-option value="Caguas">Caguas</mat-option> <mat-option value="Camuy">Camuy</mat-option> <mat-option value="Canóvanas">Canóvanas</mat-option>
+                  <mat-option value="Carolina">Carolina</mat-option> <mat-option value="Cataño">Cataño</mat-option> <mat-option value="Cayey">Cayey</mat-option><mat-option value="Ceiba">Ceiba</mat-option>
+                  <mat-option value="Ciales">Ciales</mat-option> <mat-option value="Cidra">Cidra</mat-option> <mat-option value="Coamo">Coamo</mat-option> <mat-option value="Comerío">Comerío</mat-option>
+                  <mat-option value="Corozal">Corozal</mat-option> <mat-option value="Culebra">Culebra</mat-option><mat-option value="Dorado">Dorado</mat-option> <mat-option value="Fajardo">Fajardo</mat-option>
+    
+                  <mat-option value="Florida">Florida</mat-option> <mat-option value="Guayama">Guayama</mat-option> <mat-option value="Guayanilla">Guayanilla</mat-option> <mat-option value="Guaynabo">Guaynabo</mat-option>
+                  <mat-option value="Guarabo">Guarabo</mat-option> <mat-option value="Guánica">Guánica</mat-option> <mat-option value="Hatillo">Hatillo</mat-option> <mat-option value="Hormigueros">Hormigueros</mat-option>
+                  <mat-option value="Humacao">Humacao</mat-option> <mat-option value="Isabela">Isabela</mat-option> <mat-option value="Jayuya">Jayuya</mat-option> <mat-option value="Juana Díaz">Juana Díaz</mat-option>
+                   <mat-option value="Juncos">Juncos</mat-option> <mat-option value="Lajas">Lajas</mat-option> <mat-option value="Lares">Lares</mat-option> <mat-option value="Las Marías">Las Marías</mat-option>
+                   <mat-option value="Las Piedras">Las Piedras</mat-option> <mat-option value="Loiza">Loiza</mat-option> <mat-option value="Luquillo">Luquillo</mat-option> <mat-option value="Manatí">Manatí</mat-option>
+                   <mat-option value="Maricao">Maricao</mat-option> <mat-option value="Maunabo">Maunabo</mat-option> <mat-option value="Mayagüez">Mayagüez</mat-option> <mat-option value="Moca">Moca</mat-option>
+                   <mat-option value="Morovis">Morovis</mat-option> <mat-option value="Naguabo">Naguabo</mat-option> <mat-option value="Naranjito">Naranjito</mat-option><mat-option value="Orocovi">Orocovi</mat-option>
+    
+                   <mat-option value="Patillas">Patillas</mat-option> <mat-option value="Peñuelas">Peñuelas</mat-option> <mat-option value="Ponce">Ponce</mat-option> <mat-option value="Quebradillas">Quebradillas</mat-option>
+                  <mat-option value="Rincón">Rincón</mat-option> <mat-option value="Río Grande">Río Grande</mat-option> <mat-option value="Sabana Grande">Sabana Grande</mat-option> <mat-option value="Salinas">Salinas</mat-option>
+                  <mat-option value="San Germán">San Germán</mat-option> <mat-option value="San Juan">San Juan</mat-option> <mat-option value="San Lorenzo">San Lorenzo</mat-option> <mat-option value="San Sebastián">San Sebastián</mat-option>
+                   <mat-option value="Santa Isabel">Santa Isabel</mat-option> <mat-option value="Toa Alta">Toa Alta</mat-option> <mat-option value="Toa Baja">Toa Baja</mat-option> <mat-option value="Trujillo Alto">Trujillo Alto</mat-option>
+                   <mat-option value="Utuado">Utuado</mat-option> <mat-option value="Vega Alta">Vega Alta</mat-option> <mat-option value="Vega Baja">Vega Baja</mat-option> <mat-option value="Vieques">Vieques</mat-option>
+                   <mat-option value="Villalba">Villalba</mat-option> <mat-option value="Yabucoa">Yabucoa</mat-option> <mat-option value="Yauco">Yauco</mat-option>   
+              </mat-select>
+            </mat-form-field></div>
+
+
               <!--Select Input State-->
-              <div class="col-md-2 mb-2">
-          <div class="input-group mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>State</option>
-              <option value="1">Puerto Rico</option>
-            </select></div></div>
+              <div class="col-md-2 mb-2"><mat-form-field>
+                <mat-label>State</mat-label>
+                <mat-select>              
+                  <mat-option value="Puerto Rico">Puerto Rico</mat-option>
+                </mat-select>
+              </mat-form-field></div>
+
             <!-- Input Zip Code-->
             <div class="col-md-2 mb-2">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-              </div>
-            </div>
-          </div>
+              <mat-form-field>
+             <mat-label>Zip Code</mat-label>
+                <input matInput>
+              </mat-form-field></div>
+
             <!-- Input Phone-->
             <div class="col-md-2 mb-2">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-              </div>
-            </div>
-          </div>
+              <mat-form-field>
+             <mat-label>Phone</mat-label>
+                <input matInput>
+              </mat-form-field></div>
+
             <!--Select Pregnant?-->
-            <div class="col-md-2 mb-2">
-          <div class="input-group mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Pregnant?</option>
-              <option value="1">Yes</option>
-              <option value="2">No</option>
-              <option value="3">Not Sure</option>
-            </select></div></div>
+            <div class="col-md-2 mb-2"><mat-form-field>
+              <mat-label>Pregnant?</mat-label>
+              <mat-select>              
+                <mat-option value="Yes">Yes</mat-option>
+                <mat-option value="Puerto Rico">Puerto Rico</mat-option>
+                <mat-option value="No">No</mat-option>
+                <mat-option value="Not Sure">Not Sure</mat-option>
+              </mat-select>
+            </mat-form-field></div>
+
             </div>
 
             <!-- Input Gestion Time (Weeks)-->
@@ -225,19 +218,20 @@
 
     <div class="d-flex flex-row">
         <!--Select Input Specimen Type-->
-        <div class="col-md-3 mb-2">
-         <div class="input-group mb-3">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Specimen Type</option>
-            <option value="1">NULL</option>
-          </select></div></div>
+        <div class="col-md-2 mb-2"><mat-form-field>
+          <mat-label>Specimen Type</mat-label>
+          <mat-select>              
+            <mat-option value="NULL">NULL</mat-option>
+          </mat-select>
+        </mat-form-field></div>
+
           <!--Select Input Specimen Source-->
-          <div class="col-md-3 mb-2">
-           <div class="input-group mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Specimen Source</option>
-              <option value="1">NULL</option>
-            </select></div></div>
+          <div class="col-md-2 mb-2"><mat-form-field>
+            <mat-label>Specimen Source</mat-label>
+            <mat-select>              
+              <mat-option value="NULL">NULL</mat-option>
+            </mat-select>
+          </mat-form-field></div>
             
           </div>
 
@@ -254,14 +248,18 @@
     
         <mat-step label="Patient's Clinical Information">         
         <p class="lead text-muted pb-3">Now make changes to your application source code, test it then commit &amp; push</p>
+        
         <div class="d-flex flex-row">
+
          <!--Select Input Patient's Status-->
-         <div class="col-md-3 mb-2">
-         <div class="input-group mb-3">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Patient's Status</option>
-            <option value="1">Ambulatory</option> <option value="2">Hospitalizated</option>
-          </select></div></div>
+         <div class="col-md-2 mb-2"><mat-form-field>
+          <mat-label>Patient's Status</mat-label>
+          <mat-select>              
+            <mat-option value="Ambulatory">Ambulatory</mat-option>
+            <mat-option value="Hospitalizated">Hospitalizated</mat-option>
+          </mat-select>
+        </mat-form-field></div>
+
            <!-- Date Picker First Symptom Date-->
            <div class="col-md-3 mb-2">
             <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
@@ -275,28 +273,32 @@
         </div>
           
            <!--Select Input Symptoms-->
-           <div class="col-md-2 mb-2">
-           <div class="input-group mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Symptoms</option>
-              <option value="1">Fever</option> <option value="2">Muscular Pain</option> <option value="3">Skin Eruptions</option>
-              <option value="4">Headache</option> <option value="5">Throat Ache</option> <option value="6">Diarrhea</option>
-              <option value="7">Dizziness</option> <option value="8">Fatigue</option> <option value="9">Shiver</option>
-              <option value="10">Dry Cough</option> <option value="11">Other</option>
-            </select></div></div>
+           <div class="col-md-2 mb-2"><mat-form-field>
+            <mat-label>Symptoms</mat-label>
+            <mat-select>              
+              <mat-option value="Fever">Fever</mat-option> <mat-option value="Muscular Pain">Muscular Pain</mat-option>
+              <mat-option value="Skin Eruptions">Skin Eruptions</mat-option> <mat-option value="Headache">Headache</mat-option>
+
+              <mat-option value="Throat Ache">Throat Ache</mat-option> <mat-option value="Diarrhea">Diarrhea</mat-option>
+              <mat-option value="Dizziness">Dizziness</mat-option> <mat-option value="Fatigue">Fatigue</mat-option>
+
+              <mat-option value="Shiver">Shiver</mat-option> <mat-option value="Dry Cough">Dry Cough</mat-option>
+              <mat-option value="Other">Other</mat-option>
+            </mat-select>
+          </mat-form-field></div>
 
         </div>
 
             <div class="d-flex flex-row">
              <!--Select Input Vaccine-->
-             <div class="col-md-3 mb-2">
-           <div class="input-group mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Vaccine</option>
-              <option value="1">Yes</option>
-              <option value="2">No</option>
-              <option value="3">Not Sure</option>
-            </select></div></div>
+             <div class="col-md-2 mb-2"><mat-form-field>
+              <mat-label>Vaccine</mat-label>
+              <mat-select>              
+                <mat-option value="Yes">Yes</mat-option>
+                <mat-option value="No">No</mat-option>
+                <mat-option value="Not Sure">Not Sure</mat-option>
+              </mat-select>
+            </mat-form-field></div>
 
              <!-- Date Picker Last Vaccine Date-->
              <div class="col-md-3 mb-2">
@@ -326,112 +328,108 @@
            
           <div class="d-flex flex-row">
           <!-- Input Institution's Name-->
-          <div class="col-md-3 mb-2">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Institution's Name" aria-label="Institution's Name" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-          </div>
-        </div></div>
+          <div class="col-md-2 mb-2">
+            <mat-form-field>
+           <mat-label>Institution's Name</mat-label>
+              <input matInput>
+            </mat-form-field></div>
 
           <!--Select Input Institution's Type-->
-          <div class="col-md-2 mb-2">
-          <div class="input-group mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Institution's Type</option>
-              <option value="1">Hospital</option>
-              <option value="2">Laboratory</option>
-              <option value="3">Other</option>
-            </select></div></div>
+          <div class="col-md-2 mb-2"><mat-form-field>
+            <mat-label>Institution's Type</mat-label>
+            <mat-select>              
+              <mat-option value="Yes">Hospital</mat-option>
+              <mat-option value="No">Laboratory</mat-option>
+              <mat-option value="Not Sure">Other</mat-option>
+            </mat-select>
+          </mat-form-field></div>
 
             <!-- Input Institution's ID-->
-            <div class="col-md-3 mb-2">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Institution's ID" aria-label="Institution's ID" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            </div>
-          </div></div>
+            <div class="col-md-2 mb-2">
+              <mat-form-field>
+             <mat-label>Institution's ID</mat-label>
+                <input matInput>
+              </mat-form-field></div>
 
           </div>
 
           <div class="d-flex flex-row">
             <!-- Input Institution's Address-->
-            <div class="col-md-3 mb-2">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Institution's Address" aria-label="Institution's Address" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-              </div>
-            </div></div>
+            <div class="col-md-2 mb-2">
+              <mat-form-field>
+             <mat-label>Institution's Address</mat-label>
+                <input matInput>
+              </mat-form-field></div>
 
-              <!--Select Input City-->
-              <div class="col-md-2 mb-2">
-              <div class="input-group mb-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>City</option>
-                  <option value="1">Adjuntas</option> <option value="2">Aguada</option> <option value="3">Aguadilla</option>
-                  <option value="4">Aguas Buenas</option> <option value="5">Aibonito</option> <option value="6">Arecibo</option> <option value="7">Arroyo</option>
-                  <option value="8">Añasco</option> <option value="9">Barceloneta</option> <option value="10">Barranquitas</option> <option value="11">Bayamón</option>
-                  <option value="12">Cabo Rojo</option> <option value="13">Caguas</option> <option value="14">Camuy</option> <option value="15">Canóvanas</option>
-                  <option value="16">Carolina</option> <option value="17">Cataño</option> <option value="18">Cayey</option><option value="19">Ceiba</option>
-                  <option value="20">Ciales</option> <option value="21">Cidra</option> <option value="22">Coamo</option> <option value="23">Comerío</option>
-                  <option value="24">Corozal</option> <option value="25">Culebra</option><option value="26">Dorado</option> <option value="27">Fajardo</option>
+               <!--Select Input City-->
+            <div class="col-md-2 mb-2"><mat-form-field>
+              <mat-label>City</mat-label>
+              <mat-select>              
+                <mat-option value="Adjuntas">Adjuntas</mat-option> <mat-option value="Aguada">Aguada</mat-option> <mat-option value="Aguadilla">Aguadilla</mat-option>
+                  <mat-option value="Aguas Buenas">Aguas Buenas</mat-option> <mat-option value="5">Aibonito</mat-option> <mat-option value="Arecibo">Arecibo</mat-option> <mat-option value="Arroyo">Arroyo</mat-option>
+                  <mat-option value="Añasco">Añasco</mat-option> <mat-option value="Barceloneta">Barceloneta</mat-option> <mat-option value="Barranquitas">Barranquitas</mat-option> <mat-option value="Bayamón">Bayamón</mat-option>
+                  <mat-option value="Cabo Rojo">Cabo Rojo</mat-option> <mat-option value="Caguas">Caguas</mat-option> <mat-option value="Camuy">Camuy</mat-option> <mat-option value="Canóvanas">Canóvanas</mat-option>
+                  <mat-option value="Carolina">Carolina</mat-option> <mat-option value="Cataño">Cataño</mat-option> <mat-option value="Cayey">Cayey</mat-option><mat-option value="Ceiba">Ceiba</mat-option>
+                  <mat-option value="Ciales">Ciales</mat-option> <mat-option value="Cidra">Cidra</mat-option> <mat-option value="Coamo">Coamo</mat-option> <mat-option value="Comerío">Comerío</mat-option>
+                  <mat-option value="Corozal">Corozal</mat-option> <mat-option value="Culebra">Culebra</mat-option><mat-option value="Dorado">Dorado</mat-option> <mat-option value="Fajardo">Fajardo</mat-option>
     
-                  <option value="28">Florida</option> <option value="29">Guayama</option> <option value="30">Guayanilla</option> <option value="31">Guaynabo</option>
-                  <option value="32">Guarabo</option> <option value="33">Guánica</option> <option value="34">Hatillo</option> <option value="35">Hormigueros</option>
-                  <option value="36">Humacao</option> <option value="37">Isabela</option> <option value="38">Jayuya</option> <option value="37">Juana Díaz</option>
-                   <option value="38">Juncos</option> <option value="39">Lajas</option> <option value="40">Lares</option> <option value="41">Las Marías</option>
-                   <option value="42">Las Piedras</option> <option value="43">Loiza</option> <option value="44">Luquillo</option> <option value="45">Manatí</option>
-                   <option value="46">Maricao</option> <option value="47">Maunabo</option> <option value="48">Mayagüez</option> <option value="49">Moca</option>
-                   <option value="50">Morovis</option> <option value="51">Naguabo</option> <option value="52">Naranjito</option><option value="53">Orocovi</option>
+                  <mat-option value="Florida">Florida</mat-option> <mat-option value="Guayama">Guayama</mat-option> <mat-option value="Guayanilla">Guayanilla</mat-option> <mat-option value="Guaynabo">Guaynabo</mat-option>
+                  <mat-option value="Guarabo">Guarabo</mat-option> <mat-option value="Guánica">Guánica</mat-option> <mat-option value="Hatillo">Hatillo</mat-option> <mat-option value="Hormigueros">Hormigueros</mat-option>
+                  <mat-option value="Humacao">Humacao</mat-option> <mat-option value="Isabela">Isabela</mat-option> <mat-option value="Jayuya">Jayuya</mat-option> <mat-option value="Juana Díaz">Juana Díaz</mat-option>
+                   <mat-option value="Juncos">Juncos</mat-option> <mat-option value="Lajas">Lajas</mat-option> <mat-option value="Lares">Lares</mat-option> <mat-option value="Las Marías">Las Marías</mat-option>
+                   <mat-option value="Las Piedras">Las Piedras</mat-option> <mat-option value="Loiza">Loiza</mat-option> <mat-option value="Luquillo">Luquillo</mat-option> <mat-option value="Manatí">Manatí</mat-option>
+                   <mat-option value="Maricao">Maricao</mat-option> <mat-option value="Maunabo">Maunabo</mat-option> <mat-option value="Mayagüez">Mayagüez</mat-option> <mat-option value="Moca">Moca</mat-option>
+                   <mat-option value="Morovis">Morovis</mat-option> <mat-option value="Naguabo">Naguabo</mat-option> <mat-option value="Naranjito">Naranjito</mat-option><mat-option value="Orocovi">Orocovi</mat-option>
     
-                   <option value="54">Patillas</option> <option value="55">Peñuelas</option> <option value="56">Ponce</option> <option value="57">Quebradillas</option>
-                  <option value="56">Rincón</option> <option value="57">Río Grande</option> <option value="58">Sabana Grande</option> <option value="59">Salinas</option>
-                  <option value="60">San Germán</option> <option value="61">San Juan</option> <option value="62">San Lorenzo</option> <option value="63">San Sebastián</option>
-                   <option value="64">Santa Isabel</option> <option value="65">Toa Alta</option> <option value="66">Toa Baja</option> <option value="67">Trujillo Alto</option>
-                   <option value="68">Utuado</option> <option value="69">Vega Alta</option> <option value="70">Vega Baja</option> <option value="71">Vieques</option>
-                   <option value="72">Villalba</option> <option value="73">Yabucoa</option> <option value="74">Yauco</option>               
-                </select></div></div>
-                <!--Select Input State-->
-                <div class="col-md-2 mb-2">
-            <div class="input-group mb-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>State</option>
-                <option value="1">Puerto Rico</option>
-              </select></div></div>
+                   <mat-option value="Patillas">Patillas</mat-option> <mat-option value="Peñuelas">Peñuelas</mat-option> <mat-option value="Ponce">Ponce</mat-option> <mat-option value="Quebradillas">Quebradillas</mat-option>
+                  <mat-option value="Rincón">Rincón</mat-option> <mat-option value="Río Grande">Río Grande</mat-option> <mat-option value="Sabana Grande">Sabana Grande</mat-option> <mat-option value="Salinas">Salinas</mat-option>
+                  <mat-option value="San Germán">San Germán</mat-option> <mat-option value="San Juan">San Juan</mat-option> <mat-option value="San Lorenzo">San Lorenzo</mat-option> <mat-option value="San Sebastián">San Sebastián</mat-option>
+                   <mat-option value="Santa Isabel">Santa Isabel</mat-option> <mat-option value="Toa Alta">Toa Alta</mat-option> <mat-option value="Toa Baja">Toa Baja</mat-option> <mat-option value="Trujillo Alto">Trujillo Alto</mat-option>
+                   <mat-option value="Utuado">Utuado</mat-option> <mat-option value="Vega Alta">Vega Alta</mat-option> <mat-option value="Vega Baja">Vega Baja</mat-option> <mat-option value="Vieques">Vieques</mat-option>
+                   <mat-option value="Villalba">Villalba</mat-option> <mat-option value="Yabucoa">Yabucoa</mat-option> <mat-option value="Yauco">Yauco</mat-option>   
+              </mat-select>
+            </mat-form-field></div>
+
+                 <!--Select Input State-->
+              <div class="col-md-2 mb-2"><mat-form-field>
+                <mat-label>State</mat-label>
+                <mat-select>              
+                  <mat-option value="Puerto Rico">Puerto Rico</mat-option>
+                </mat-select>
+              </mat-form-field></div>
 
               <!-- Input Zip Code-->
+
               <div class="col-md-2 mb-2">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-                  </div>
-                </div></div>
+                <mat-form-field>
+               <mat-label>Zip Code</mat-label>
+                  <input matInput>
+                </mat-form-field></div>
 
             </div>
 
               <div class="d-flex flex-row">
               <!-- Input Phone-->
-              <div class="col-md-3 mb-2">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                </div>
-              </div></div> 
-            
+              <div class="col-md-2 mb-2">
+                <mat-form-field>
+               <mat-label>Phone</mat-label>
+                  <input matInput>
+                </mat-form-field></div>            
 
                <!-- Input Physician Name-->
-               <div class="col-md-3 mb-2">
-               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Physician Name" aria-label="Physician Name" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                </div>
-              </div></div>
+               <div class="col-md-2 mb-2">
+                <mat-form-field>
+               <mat-label>Physician Name</mat-label>
+                  <input matInput>
+                </mat-form-field></div>
+
                 <!-- Input Physician ID-->
-                <div class="col-md-3 mb-2">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Physician ID" aria-label="Physician ID" aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-                  </div>
-                </div></div>
+                <div class="col-md-2 mb-2">
+                  <mat-form-field>
+                 <mat-label>Physician ID</mat-label>
+                    <input matInput>
+                  </mat-form-field></div>
+
                 </div>
              
 

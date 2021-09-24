@@ -18,6 +18,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatStepperModule} from '@angular/material/stepper';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatInputModule,
     MatNativeDateModule,
     MatStepperModule,
+    MatFormFieldModule,
+    MatSelectModule,
     FormsModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
