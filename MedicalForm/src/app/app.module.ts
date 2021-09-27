@@ -5,7 +5,6 @@ import { MatSliderModule } from '@angular/material/slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
 import { NewMedicalFormComponent } from './modules/new-medical-form/new-medical-form.component';
 import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
@@ -18,8 +17,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatStepperModule} from '@angular/material/stepper';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { MatTimepickerModule } from 'mat-timepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -31,12 +35,14 @@ import {MatSelectModule} from '@angular/material/select';
     OrderComponent,
     ReferInstitutionComponent,
     ClinicalComponent,
-    SpecimenComponent
+    SpecimenComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbModule,
     MatSliderModule,
     MatDatepickerModule,
     MatInputModule,
@@ -44,13 +50,16 @@ import {MatSelectModule} from '@angular/material/select';
     MatStepperModule,
     MatFormFieldModule,
     MatSelectModule,
-    FormsModule,
+    MatButtonModule,
+    NgxMaterialTimepickerModule,
+    MatTimepickerModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       {path: 'new-medical-form', component: NewMedicalFormComponent}
       //{ path: '', redirectTo: 'welcome', pathMatch: 'full' },
       //{ path: '**', redirectTo: 'welcome', pathMatch: 'full' }
-    ])
+    ]),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

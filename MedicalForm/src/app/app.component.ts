@@ -29,9 +29,13 @@ import { Component } from "@angular/core";
         </nav>
       </div>
 
+      
+
 <div class='container'>
 <router-outlet></router-outlet>
+
 </div>
+
 `,
   styleUrls: ['./app.component.css']
 })
