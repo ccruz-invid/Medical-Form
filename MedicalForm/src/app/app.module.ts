@@ -23,6 +23,7 @@ import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { MatTimepickerModule } from 'mat-timepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -53,6 +54,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatButtonModule,
     NgxMaterialTimepickerModule,
     MatTimepickerModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       {path: 'new-medical-form', component: NewMedicalFormComponent}

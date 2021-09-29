@@ -8,26 +8,26 @@
            <div class="col-md-2 mb-2">
            <mat-form-field>
             <mat-label>First Name</mat-label>
-            <input matInput>
+            <input matInput />
           </mat-form-field></div>
             <!-- Input Middle Name-->
             <div class="col-md-2 mb-2">
               <mat-form-field>
              <mat-label>Middle Name</mat-label>
-                <input matInput>
+             <input matInput />
               </mat-form-field></div>
           <!-- Input Last Name-->
           <div class="col-md-2 mb-2">
             <mat-form-field>
            <mat-label>Last Name</mat-label>
-              <input matInput>
+           <input matInput />
             </mat-form-field></div>
 
            <!-- Input Second Last Name-->
            <div class="col-md-2 mb-2">
             <mat-form-field>
            <mat-label>Second Last Name</mat-label>
-              <input matInput>
+           <input matInput />
             </mat-form-field></div>
 
           <!--Select Input Gender-->
@@ -46,36 +46,36 @@
 
         <div class="d-flex flex-row">
        <!-- Date Picker Date of Birth-->
-       
+       <div ng-app="app" ng-controller="ctrl">
         <div class="col-md-3 mb-2">
           <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Date of Birth</mat-label>
-          <input matInput [matDatepicker]="agedatepicker" [min]="minDate" [max]="maxDate" (selectedChange)="$event">
-          <mat-datepicker-toggle matSuffix [for]="agedatepicker" ></mat-datepicker-toggle>
+          <input matInput [matDatepicker]="agedatepicker" [min]="minDate" [max]="maxDate"
+          />
+           
+          <mat-datepicker-toggle matSuffix [for]="agedatepicker" > </mat-datepicker-toggle>
+          
           <mat-datepicker #agedatepicker ></mat-datepicker>        
         </mat-form-field> 
       </div>
              <!-- Input Age-->
-             <!-- <p *ng="age">{{showAge}}/p> -->
-             <!-- <div class="col-md-2 mb-2">
-              <mat-form-field>
-             <mat-label>Age</mat-label>
-            <input matInput onChange={this.ShowAge}>
-             
-              </mat-form-field></div> -->
-         
+            <div class="col-md-2 mb-2">
+              <mat-form-field> <mat-label> Age </mat-label>
+                <p *ngIf="age">Tu edad es {{ showAge }}</p>
+              <input matInput [disabled]="true" [(ngModel)]="age"/>
+              </mat-form-field></div> </div>
 
           <!-- Input Last 4 SSN-->
           <div class="col-md-2 mb-2">
             <mat-form-field>
            <mat-label>Last 4 SSN</mat-label>
-              <input matInput>
+           <input matInput />
             </mat-form-field></div>
              <!-- Input Address-->
              <div class="col-md-2 mb-2">
               <mat-form-field>
              <mat-label>Address</mat-label>
-                <input matInput>
+             <input matInput />
               </mat-form-field></div>
       </div>
         <div class="d-flex flex-row">
@@ -121,14 +121,14 @@
             <div class="col-md-2 mb-2">
               <mat-form-field>
              <mat-label>Zip Code</mat-label>
-                <input matInput>
+             <input matInput />
               </mat-form-field></div>
 
             <!-- Input Phone-->
             <div class="col-md-2 mb-2">
               <mat-form-field>
              <mat-label>Phone</mat-label>
-                <input matInput>
+             <input matInput />
               </mat-form-field></div>
 
             <!--Select Pregnant?-->
@@ -149,8 +149,8 @@
             <div class="col-md-3 mb-2">
             <div class="input-group mb-3">
                <mat-form-field>
-              <input type="number" class="form-control" placeholder="Gestion Time (Weeks)" aria-label="Gestion Time (Weeks)" 
-              aria-describedby="basic-addon2" min="0" max="42"> <input matInput> </mat-form-field>           
+              <input matInput type="number" class="form-control" placeholder="Gestion Time (Weeks)" aria-label="Gestion Time (Weeks)" 
+              aria-describedby="basic-addon2" min="0" max="42" /> </mat-form-field>           
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@
           <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
           <mat-form-field>
           <input matInput [matDatepicker]="datecollected" placeholder="Date Collected:" aria-label="Date Collected:" 
-          aria-describedby="basic-addon2" class="form-control">
+          aria-describedby="basic-addon2" class="form-control" />
           <mat-datepicker-toggle matSuffix [for]="datecollected"></mat-datepicker-toggle>
           <mat-datepicker #datecollected></mat-datepicker>         
         </mat-form-field>
@@ -183,11 +183,13 @@
         <!-- Time Picker Time Collected-->
          <div class="col-md-3 mb-2">
           <mat-form-field>
-          <input [ngxTimepicker]="timecollected" placeholder="Time Collected:" aria-label="Time Collected:" 
-          aria-describedby="basic-addon2" class="form-control">
-      <ngx-material-timepicker #timecollected></ngx-material-timepicker>
+          <input matTimepicker #timecollected ="matTimepicker" id="timecollected" mode="12h"
+          placeholder="Time Collected:" aria-label="Time Collected:" 
+          aria-describedby="basic-addon2" class="form-control"/>
         </mat-form-field>
       </div>
+
+     
 
     </div>
 
@@ -197,7 +199,7 @@
           <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
           <mat-form-field>
           <input matInput [matDatepicker]="datereceived" placeholder="Date Received:" aria-label="Date Received:" 
-          aria-describedby="basic-addon2" class="form-control">
+          aria-describedby="basic-addon2" class="form-control" />
           <mat-datepicker-toggle matSuffix [for]="datereceived"></mat-datepicker-toggle>
           <mat-datepicker #datereceived></mat-datepicker>         
         </mat-form-field>
@@ -206,9 +208,9 @@
          <!-- Time Picker Time Received-->
          <div class="col-md-3 mb-2">
           <mat-form-field>
-          <input [ngxTimepicker]="timereceived" placeholder="Time Collected:" aria-label="Time Collected:" 
-          aria-describedby="basic-addon2" class="form-control">
-      <ngx-material-timepicker #timereceived></ngx-material-timepicker>
+          <input matTimepicker #timereceived ="matTimepicker" id="timereceived" mode="12h"
+          placeholder="Time Collected:" aria-label="Time Collected:" 
+          aria-describedby="basic-addon2" class="form-control" />
         </mat-form-field>
       </div>
 
@@ -265,7 +267,7 @@
             <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
             <mat-form-field>
             <input matInput [matDatepicker]="firstsymptomdate" placeholder="First Symptom Date:" aria-label="First Symptom Date:" 
-            aria-describedby="basic-addon2" class="form-control">
+            aria-describedby="basic-addon2" class="form-control" />
             <mat-datepicker-toggle matSuffix [for]="firstsymptomdate"></mat-datepicker-toggle>
             <mat-datepicker #firstsymptomdate></mat-datepicker>         
           </mat-form-field>
@@ -305,7 +307,7 @@
               <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
               <mat-form-field>
               <input matInput [matDatepicker]="lastvaccinedate" placeholder="Last Vaccine Date:" aria-label="Last Vaccine Date:" 
-              aria-describedby="basic-addon2" class="form-control">
+              aria-describedby="basic-addon2" class="form-control" />
               <mat-datepicker-toggle matSuffix [for]="lastvaccinedate"></mat-datepicker-toggle>
               <mat-datepicker #lastvaccinedate></mat-datepicker>         
             </mat-form-field>
@@ -333,7 +335,7 @@
           <div class="col-md-2 mb-2">
             <mat-form-field>
            <mat-label>Institution's Name</mat-label>
-              <input matInput>
+           <input matInput />
             </mat-form-field></div>
 
           <!--Select Input Institution's Type-->
@@ -350,7 +352,7 @@
             <div class="col-md-2 mb-2">
               <mat-form-field>
              <mat-label>Institution's ID</mat-label>
-                <input matInput>
+             <input matInput />
               </mat-form-field></div>
 
           </div>
@@ -360,7 +362,7 @@
             <div class="col-md-2 mb-2">
               <mat-form-field>
              <mat-label>Institution's Address</mat-label>
-                <input matInput>
+             <input matInput />
               </mat-form-field></div>
 
                <!--Select Input City-->
@@ -405,7 +407,7 @@
               <div class="col-md-2 mb-2">
                 <mat-form-field>
                <mat-label>Zip Code</mat-label>
-                  <input matInput>
+               <input matInput />
                 </mat-form-field></div>
 
             </div>
@@ -415,21 +417,21 @@
               <div class="col-md-2 mb-2">
                 <mat-form-field>
                <mat-label>Phone</mat-label>
-                  <input matInput>
+               <input matInput />
                 </mat-form-field></div>            
 
                <!-- Input Physician Name-->
                <div class="col-md-2 mb-2">
                 <mat-form-field>
                <mat-label>Physician Name</mat-label>
-                  <input matInput>
+               <input matInput />
                 </mat-form-field></div>
 
                 <!-- Input Physician ID-->
                 <div class="col-md-2 mb-2">
                   <mat-form-field>
                  <mat-label>Physician ID</mat-label>
-                    <input matInput>
+                 <input matInput />
                   </mat-form-field></div>
 
                 </div>
