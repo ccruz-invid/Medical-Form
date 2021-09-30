@@ -11,8 +11,12 @@ import { Component, OnInit } from '@angular/core';
 export class NewMedicalFormComponent implements OnInit {
   minDate: Date;
   maxDate: Date;
-  age: any;
-  showAge: number | undefined;
+  // age: number;
+  // showAge: number | undefined;
+  // dob: Date;
+//   date: any;
+// dob: any;
+age = 0;
 
   
  
@@ -24,7 +28,13 @@ export class NewMedicalFormComponent implements OnInit {
      const currentYear = new Date().getFullYear();
      this.minDate = new Date(currentYear - 121, 0, 1);
      this.maxDate = new Date(currentYear + 1, 11, 31); 
-    
+
+    //   this.age = 0;
+    // this.dob = new Date();
+
+//     this.date = {};
+//  this.date.age = '';
+//  this.dob = this.dob;
      
   }
 
@@ -32,13 +42,21 @@ export class NewMedicalFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public CalculateAge() { 
-    if(this.age){
-      const convertAge = new Date(this.age);
-      const timeDiff = Math.abs(Date.now() - convertAge.getTime());
-      this.showAge = Math.floor((timeDiff / (1000 * 3600 * 24))/365);
-    }
-    return this.showAge;
+//   public CalculateAge(event:Event): void { 
+  
+   
+//     console.log(this.dob);
+//     const timeDiff = Math.abs(Date.now() - this.dob);
+//     console.log(timeDiff);
+//     this.date.age = Math.floor((timeDiff / (1000 * 3600 * 24)) / 365);
+//     console.log(this.dob.age);
+
+// }
+
+
+CalculateAge(event: { value: Date; }) {
+  let timeDiff = Math.abs(Date.now() - event.value.getTime());
+  this.age = Math.floor((timeDiff / (1000 * 3600 * 24))/365.25);
 }
 
 }
